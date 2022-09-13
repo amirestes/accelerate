@@ -18,7 +18,7 @@ add_action('wp_enqueue_scripts', 'accelerate_child_scripts' );
 
 /* Custom Post Type */
 
-function create_custome_post_types() {
+function create_custom_post_types() {
     register_post_type('case_studies',
         array(
             'labels' => array (
@@ -32,4 +32,4 @@ function create_custome_post_types() {
         );
 }
 
-add_action('init','create_custome_post_types');
+add_action('init','create_custom_post_types');
